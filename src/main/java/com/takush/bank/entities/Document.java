@@ -8,7 +8,6 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="documents")
@@ -20,11 +19,11 @@ public class Document {
 
 
     @ManyToOne
-    @Column(name="debet_account_id")
+
     private Account debetAccount;
 
     @ManyToOne
-    @Column(name="credit_account_id")
+
     private Account creditAccount;
 
 

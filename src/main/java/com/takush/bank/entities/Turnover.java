@@ -8,7 +8,6 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="turnovers")
@@ -20,7 +19,7 @@ public class Turnover {
 
 
     @ManyToOne
-    @Column(name="account_id")
+
     private Account account;
 
 

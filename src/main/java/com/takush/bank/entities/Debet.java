@@ -9,7 +9,6 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="debets")
@@ -20,7 +19,7 @@ public class Debet {
     private Long id;
 
     @OneToOne
-    @Column(name="product_id")
+
     private Product product;
 
     private String balance;

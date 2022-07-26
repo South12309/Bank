@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,7 +15,7 @@ public class Product {
     private Long id;
 
     @ManyToOne
-    @Column(name="client_id")
+
     private Client client;
 
 }

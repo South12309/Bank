@@ -8,7 +8,6 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="accounts")
@@ -19,7 +18,7 @@ public class Account {
     private Long id;
 
     @OneToOne
-    @Column(name="product_id")
+
     private Product product;
 
     private String number;
