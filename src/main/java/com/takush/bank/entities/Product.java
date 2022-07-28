@@ -6,8 +6,11 @@ import javax.persistence.*;
 
 
 @Entity
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name="products")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
